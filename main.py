@@ -16,6 +16,11 @@ DST = os.path.join(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"), "entry.png")
 
 
 def main() -> None:
+    if not os.path.isfile(SRC):
+        raise SystemExit(
+            "ai-happy-01 entry failed: vendored entry.png is missing "
+            f"(expected at {SRC}); refusing to write an empty output"
+        )
     os.makedirs(os.path.dirname(DST), exist_ok=True)
     shutil.copyfile(SRC, DST)
     # Guard the determinism the grader checks: the copy must be exact.
