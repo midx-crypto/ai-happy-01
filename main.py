@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """Copy the vendored happy image to /output/entry.png, byte for byte.
 
-The image lives in this repository as entry.png: a capybara soaking in a
-steaming hot spring at sunrise, a tiny orange kitten in a knitted coral
-scarf riding on its back, and a duckling perched on its head, cherry
-blossom petals drifting through warm golden light. This program only
+The image lives in this repository as entry.png: a tiny baby hedgehog
+in a knitted coral scarf holding up a small round brass mirror toward
+the viewer, warm golden morning light. This program only
 copies it, so both runs write identical bytes and no network is needed.
 """
 
